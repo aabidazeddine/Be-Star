@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 89%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  clear:both;
+  padding-top:20px;
+  background: #F5F5F5;
+  height: 50px;
+} 
+
+.wrap-header {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #009688;
+  border-bottom: 2px solid #008073;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.wrap-header-navbar {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-header {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dropdown-header > a {
+    color: white;
+}
+
+.dropdown-header > a:hover {
+  text-decoration: none;
+}
+
+.dropdown-header > a:active {
+  text-decoration: none;
+}
+
+.profil-btn {
+  background-color: #4DB6AC;
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+}

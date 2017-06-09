@@ -1,0 +1,153 @@
+<!-- NEW HEADER -->
+<header class="navbar navbar-inverse bs-docs-nav " id="top">
+  <div class="container ng-scope">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation
+                                </span>
+            <span class="icon-bar">
+                                </span>
+            <span class="icon-bar">
+                                </span>
+            <span class="icon-bar">
+                                </span>
+          </button>
+          <a href="http://dvbeswsc01.rouen.francetelecom.fr:8084/mockup/indexANG.html" class="navbar-brand">
+            <img alt="Accueil" title="Retour à l&#39;accueil"
+                 src="../../../assets/logo-orangep.jpg"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a routerLink="/home">Accueil
+              </a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                 aria-expanded="false">Favoris
+                <span class="caret">
+                                        </span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a>Réceptions en attente
+                    <span class="badge">5
+                                            </span></a>
+                </li>
+                <li>
+                  <a>Mes ventes</a>
+                </li>
+                <li>
+                  <a>Recherche produit</a>
+                </li>
+                <!--li><a href="#">Something else here</a></li-->
+                <li role="separator" class="divider">
+                </li>
+                <li>
+                  <a>Separated link</a>
+                </li>
+                <li role="separator" class="divider">
+                </li>
+                <li>
+                  <a>Gérer ses favoris</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <!--li><a href="#">Link</a></li-->
+            <li>
+              <a>Messages
+                <span class="badge">5
+                                    </span></a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle"
+                 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <!--span class="glyphicon glyphicon-user" aria-hidden="true"></span--> John Doe
+                <span class="caret">
+                                        </span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a>Préférences</a>
+                </li>
+                <li>
+                  <a>Another action</a>
+                </li>
+                <li>
+                  <a>Something else here</a>
+                </li>
+                <li role="separator" class="divider">
+                </li>
+                <li>
+                  <a>Se déconnecter</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </div> <!-- /.container -->
+</header>
+
+<div id="wrap">
+  <div id="main" class="container clear-top">
+    <div class="content">
+      <breadcrumb></breadcrumb>
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<ul class="nav nav-tabs col-xs-12 ng-scope">
+  <li class="active"><a  >Aide</a></li>
+  <li><a   >FAQ</a></li>
+</ul>
+<div class="tab-content col-xs-12 ng-scope">
+  <div class="tab-pane active" id="help" *ngIf="showOngle">
+    <ul>
+      <li>Inventaire : Accès aux fonctions d'inventaire, suivi d'inventaire (périmètre d'inventaire pour les CLP).</li>
+      <li>Livraison : Accès aux fonctions de réception, consultation des prévisions de livraison.</li>
+      <li>Mouvements de Stock : Accès aux fonctions de mouvements de stock suivantes : </li>
+      <ul>
+        <li>Transfert-interboutique</li>
+        <li>Mise en stock vitrine/démo</li>
+        <li>Retour Piloté</li>
+        <li>Aliénation</li>
+      </ul>
+      <li>Consultation : Accès aux fonctions de consultation des stocks boutique et boutiques voisines et consultation d'article</li>
+    </ul>
+  </div>
+  <div class="tab-pane active" id="faq" *ngIf="!showOngle">
+    <ul>
+      <li><a >I can't delete an entry</a></li>
+      <li><a>I've got an error 500 when i try to edit an entry</a></li>
+      <li><a >Another question</a></li>
+    </ul>
+  </div>
+</div><!-- fin nav tabs A -->
+<footer class="navbar footer " role="contentinfo">
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-xs-12 o-footer">
+        <div class="o-footer-bottom">
+          <ul>
+            <li>BeStar Chewbacca G02R0C00</li>
+            <li><a>Lien A</a></li>
+            <li><a>Lien B</a></li>
+            <li><a>Lien C</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

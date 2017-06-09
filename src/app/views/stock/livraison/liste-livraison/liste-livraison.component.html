@@ -1,0 +1,32 @@
+<h1>Livraisons
+  <small>pour Paris Champs Élysées <a type="button" title="Changer de boutique" data-toggle="modal" class="icon-Pencil"
+                                      data-target=".bs-example-boutique-sm"><span class="text-hide">Modifier</span></a>
+  </small>
+</h1>
+<p class="text-right"><a class="btn btn-default">Réception Libre</a></p>
+<table id="news-table" class="table table-striped tablesorter o-responsive-table col-xs-12">
+  <thead class="cf">
+  <tr>
+    <th scope="col" class="header"><a>Bordereau<span class="sr-only"> sortable</span></a></th>
+    <th scope="col" class="header"><a>Expéditeur<span class="sr-only"> sortable</span></a></th>
+    <th scope="col" class="header"><a>N° expédition<span class="sr-only"> sortable</span></a></th>
+    <th scope="col" class="header"><a>Statut<span class="sr-only"> sortable</span></a></th>
+    <th scope="col" class="header"><a>Date livraison<span class="sr-only"> sortable</span></a></th>
+    <th scope="col" class="header"><a>Date réception<span class="sr-only"> sortable</span></a></th>
+    <th scope="col" class="header">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let livraison of listLivraison">
+    <td>{{livraison?.bordereau}}</td>
+    <td>{{livraison?.expediteur}}</td>
+    <td>{{livraison?.numeroExpediteur}}</td>
+    <td>{{livraison?.statut}}</td>
+    <td>{{livraison?.dateLivraison}}</td>
+    <td>{{livraison?.dateReception}}</td>
+    <td><a routerLink="consulter" class="btn btn-success">Consulter</a>
+      <a routerLink="receptionner" class="btn btn-primary">Réceptionner</a></td>
+
+  </tr>
+  </tbody>
+</table>
